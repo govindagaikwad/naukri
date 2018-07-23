@@ -1,0 +1,44 @@
+The content below is only a placeholder and can be replaced.-->
+ <div style="text-align:center"> 
+
+ <Naukri-form></Naukri-form>
+ <nextform-form></nextform-form>
+ <login-form></login-form>
+ <signup-form></signup-form> 
+
+
+<select>
+  <option>Select Color</option>
+  <option value="red" (click)="chooseColor('Red')">Red</option>
+  <option value="green">Green</option>
+  <option value="orange">Orange</option>
+  <option value="yellow">Yellow</option>
+</select>
+ <h1 [appattribute]="'tomato'">{{name}}</h1>   
+<app-attribute></app-attribute>  
+<a matline routerLink="/home">Home</a>
+<a matline routerLink="/student">Student</a>
+<a matline routerLink="/employee">Employee</a>
+
+<group-component></group-component>
+
+<router-outlet></router-outlet> 
+
+<h3>Name:
+  <span>{{employeeDetails.Name}}</span>
+</h3>
+<hr>
+<h3>City:
+  <span>{{employeeDetails.city}}</span>
+</h3>
+<hr>
+<h3>Salary:
+  <span>{{employeeDetails.salary}}</span>
+</h3>
+<hr>
+
+
+
+<app-emp  [name]="emp.empName" [city]="emp.ecity" [salary]="emp.salary" (selectedRecord)="displayRecord($event)"
+  *ngFor="let emp of empName"></app-emp>
+ 

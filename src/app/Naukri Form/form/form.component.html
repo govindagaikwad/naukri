@@ -1,0 +1,134 @@
+
+<div class="container">
+<h3>{{title}}</h3>
+<hr>
+<form>
+    <div class="form-group">
+        <label for="name">Profile Name: </label>
+        <input type="text" value="Profile 1" class="form-control">
+   
+    </div>
+    <h4>Contact Details</h4>
+    <div class="form-group">
+        <label for="name">Your Name: </label>
+        <input type="text" class="form-control">
+   
+    </div>
+    <div class="form-group">
+        <label for="name">*Email Address:</label>
+        <input type="email" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="name">*Current Location:    </label>
+        <input type="text" class="form-control">
+        <input type="checkbox">
+        <label>Outside India</label>
+
+    </div>
+    <p>Contact Number: At least one among Mobile And Landline numbers is mandatory</p>
+    <div class="form-group">
+        <label for="number">*Mobile:</label>
+        <input type="text" class="form-control" maxlength="10">
+        <p> you do not have a mobile,enter <strong> Landline no</strong></p>
+    </div>
+    <h4>Current Professional Details</h4>
+    <div class="form-group">
+        <label for="number">*Total Experience:</label>
+    
+        <select name="" id="" class="form-control">
+            <option>Select Year</option>
+            <option *ngFor="let y of year">{{y}} </option>
+        </select>
+        <label>Year</label> 
+            <select name="" id="" class="form-control">
+                <option>Select Month</option>
+                <option *ngFor="let y of year">{{y}} </option>
+            </select>
+            <label>Month</label>
+    </div>
+    <div class="form-group">
+        <label for="name">*Current Industry:</label>
+        <input type="text" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="name">*Functional Area:</label>
+        <input type="text" class="form-control">
+    <p><strong>what is my Functional Area and indusrty</strong></p>
+    </div>
+    <div class="form-group">
+        <label for="name">*key Skills:</label>
+        <input type="text" maxlength="250" class="form-control">
+        <label>250</label>
+    </div>
+    <div class="form-group">
+        <label for="name">*Resume Headline:
+        <textarea name="" id="" cols="30" rows="3" maxlength="5" class="form-control"></textarea>
+        <label>250</label>
+    </label>
+    <p>Your Resume headline is the first thing Recuireter will see.<strong>view Example</strong></p>
+    </div>
+    <h4>Education Details</h4>
+    <div class="form-group">
+        <label for="name">*Basic/Graduation:</label>
+        <select name="" id="" class="form-control">
+            <option value="">Gaikwad</option>
+            <option value="">Govinda</option>
+            <option value="">Balasaheb</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="name">*Post Graduation:</label>
+        <select name="" id="" class="form-control">
+            <option value="">Gaikwad</option>
+            <option value="">Govinda</option>
+            <option value="">Balasaheb</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="name">*Doctorate/Phd:</label>
+        <select name="" id="" class="form-control">
+            <option value="">Gaikwad</option>
+            <option value="">Govinda</option>
+            <option value="">Balasaheb</option>
+        </select>
+    </div>
+    <h4>Other Certifications</h4>
+    <div class="form-group">
+        <label for="name">*Diploma/Certificate:</label>
+        <input type="text" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="name">*Diploma/Certificate:</label>
+        <input type="text" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="name">*Diploma/Certificate:</label>
+        <input type="text" class="form-control">
+    </div>
+    <h4>Upload Resume</h4>
+    <div class="form-group">
+        <label for="name">Attach Resume</label>
+        <input type="file" class="form-control">
+        <br>
+        <label>Supported Format:doc,docx,rtf.Max Fil Size:2MB</label>
+    </div>
+
+
+</form>
+
+<p><strong> may also write or copy-paste your resume here</strong></p>
+<p>if you do not have your resume,you may still continue to create your account.</p>
+<h4>Mailer and Privacy Settings</h4>
+<ul>
+    <li><input type="checkbox">Job Alert</li>
+    <li><input type="checkbox">Naukri FastForword Emails</li>
+    <li><input type="checkbox">Naukri FastForword Calls/SMS</li>
+</ul>
+<ul>
+        <li><input type="checkbox">Important Notification From Naukri.com</li>
+        <li><input type="checkbox">Communication from Clients(Voic/Calls/SMS)</li>
+        <li><input type="checkbox">Other Promotional/Special Offers</li>
+</ul>
+
+<button type="submit" class="btn btn-primary" (click)="SaveAndNext()">Save & Next</button>
+</div>

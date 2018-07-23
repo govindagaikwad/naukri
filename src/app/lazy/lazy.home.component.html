@@ -1,0 +1,17 @@
+ <h3>studentname:
+  <span>{{studentDetails.Name}}</span>
+</h3>
+<hr>
+<h3>contact:
+  <span>{{studentDetails.contact}}</span>
+</h3>
+<hr>
+<h3>email:
+  <span>{{studentDetails.email}}</span>
+</h3>
+<hr>
+<App-Lazy [studentName]="std.stdname"
+ [studentContact]="std.contact" 
+ [studentEmail]="std.email" 
+ (selectedRecord)="displayRecord($event)" 
+ *ngFor="let std of Student"></App-Lazy>
